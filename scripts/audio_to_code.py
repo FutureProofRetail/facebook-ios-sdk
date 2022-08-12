@@ -77,7 +77,7 @@ def write_implementation_file(inputFile, header, className, outputFile):
     f.write("@end\n")
 
 def usage(exitCode):
-  print 'audio_to_code.py -i <inputFile> -c <class> -o <outputDir>'
+  print('audio_to_code.py -i <inputFile> -c <class> -o <outputDir>')
   sys.exit(exitCode)
 
 def main(argv):
@@ -100,15 +100,15 @@ def main(argv):
       outputDir = arg
 
   if not inputFile:
-    print 'inputFile is required.'
+    print('inputFile is required.')
     usage(2)
 
   if not outputClass:
-    print 'outputFile is required.'
+    print('outputFile is required.')
     usage(2)
 
   if not outputDir:
-    print 'outputDir is required.'
+    print('outputDir is required.')
     usage(2)
 
   # Build file headers
